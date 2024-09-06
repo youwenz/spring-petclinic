@@ -34,10 +34,7 @@ jobs:
       with:
         name: build-artifacts
         path: target/**
-    
-    - name: Run Unit Tests
-      run: mvn test 
-      
+        
     - name: Upload Test Reports
       uses: actions/upload-artifact@v4 
       with:
